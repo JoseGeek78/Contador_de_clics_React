@@ -10,6 +10,9 @@ function App() {
           src={binarycode}
           alt='Logo binary'/>
       </div>
+       <div className='contenedor-principal'>
+
+       </div>
     </div>
   );
 }
