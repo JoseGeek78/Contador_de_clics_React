@@ -13,7 +13,7 @@ function App() {
   }
 
   const reiniciarContador = () => {
-    console.log('Reiniciar');
+    setNumClics(0);
   }
 
   return (
@@ -25,7 +25,7 @@ function App() {
           alt='Logo binary' />
       </div>
        <div className='contenedor-principal'>
-    <Contador numClics='5' />
+    <Contador numClics={numClics} />
       <Boton
       texto='Clic'
       esBotonDeClic={true}
