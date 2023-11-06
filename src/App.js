@@ -1,5 +1,6 @@
 import './App.css';
 import Boton from './componentes/Boton';
+import Contador from './componentes/Contador';
 import binarycode from './imagenes/binarycode-logo.jpg'
 
 function App() {
@@ -18,17 +19,18 @@ function App() {
         <img
           className='binarycode-logo' 
           src={binarycode}
-          alt='Logo binary'/>
+          alt='Logo binary' />
       </div>
        <div className='contenedor-principal'>
+    <Contador numClics='5' />
       <Boton
       texto='Clic'
       esBotonDeClic={true}
-      manejarClic={manejarClic}/>
+      manejarClic={manejarClic} />
       <Boton 
       texto='Reiniciar'
       esBotonDeClic={false}
-      manejarClic={reiniciarContador}/>
+      manejarClic={reiniciarContador} />
        </div>
     </div>
   );
